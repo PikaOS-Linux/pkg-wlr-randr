@@ -9,6 +9,8 @@ Build-Depends: debhelper-compat (= 13),
                build-essential,
                wayland-protocols,
                libwayland-dev,
+               cmake,
+               cmake-extras,
 Rules-Requires-Root: no
 
 Package: wlr-randr
