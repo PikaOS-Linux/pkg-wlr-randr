@@ -1,19 +1,18 @@
-Source: upstream-name
-Section: admin
+Source: wlr-randr
+Section: main
 Priority: optional
-Maintainer: name <email>
+Maintainer: ferrreo <harderthanfire@gmail.com>
 Standards-Version: 4.6.1
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: debhelper-compat (= 13),
+               meson,
+               ninja-build,
+               build-essential,
+               wayland-protocols,
+               libwayland-dev,
 Rules-Requires-Root: no
 
-Package: pkgname1
+Package: wlr-randr
 Architecture: linux-any
-# Delete any of these lines if un-used
-Depends: ${misc:Depends}, depends
-Recommends: high priority optdepends
-Conflicts: conflicts
-Suggests: low priority optdepends
-Breaks: also conflicts!?
-Provides: provides
-#
-Description: pkgdesc
+Depends: ${misc:Depends},
+Provides: wlr-randr
+Description: randr for wayland
